@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abi Sidqul Wafa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">
+        <img src="profile.jpg" alt="Abi Sidqul Wafa">
+      </div>
+      <div class="intro">
+        <h1>Abi Sidqul Wafa</h1>
+        <p class="lead">Mahasiswa Sistem Informasi — STEKOM Semarang</p>
+        <nav>
+          <a class="btn" href="#about">About</a>
+          <a class="btn" href="#blog">Blog</a>
+          <a class="btn" href="#projects">Projects</a>
+          <a class="btn" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h2>Selamat Datang!</h2>
+        <p>Hidup adalah perjalanan belajar tanpa henti — dan setiap langkah kecil membawa kita menuju versi terbaik dari diri kita sendiri.</p>
+      </div>
+    </section>
+
+    <section id="about" class="card">
+      <h2>Tentang Saya</h2>
+      <p>Saya Abi, mahasiswa Sistem Informasi yang senang dengan logika, desain, dan teknologi. Saya percaya bahwa setiap ide kecil bisa menjadi sesuatu yang besar jika dikerjakan dengan hati.</p>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Proyek</h2>
+      <ul>
+        <li>Website Pribadi</li>
+        <li>Aplikasi Pengelolaan Data</li>
+        <li>Latihan Logika & Algoritma</li>
+      </ul>
+    </section>
+
+
+    <section id="socials" class="grid-section">
+  <h2>Terhubung dengan Saya</h2>
+  <div class="grid-container">
+    <div class="grid-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+      <h3>WhatsApp</h3>
+      <p><a href="https://wa.me/62895422345583" target="_blank">Chat Sekarang</a></p>
+    </div>
+    <div class="grid-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      <h3>Instagram</h3>
+      <p><a href="https://instagram.com/wafa_ashdqy" target="_blank">@wafa_ashdqy</a></p>
+    </div>
+    <div class="grid-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Email">
+      <h3>Gmail</h3>
+      <p><a href="mailto:sidqulwafa1312@email.com">Kirim Pesan</a></p>
+    </div>
+  </div>
+</section>
+
+    <footer>
+      <p>© 2025 Abi Sidqul Wafa</p>
+    </footer>
+  </div>
+
+  <script>
+  const cards = document.querySelectorAll('.grid-card');
+  const revealOnScroll = () => {
+    const triggerBottom = window.innerHeight * 0.85;
+    cards.forEach(card => {
+      const cardTop = card.getBoundingClientRect().top;
+      if (cardTop < triggerBottom) card.classList.add('show');
+    });
+  };
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll(); // buat animasi langsung aktif kalau udah kelihatan
+</script>
+</body>
+</html>
